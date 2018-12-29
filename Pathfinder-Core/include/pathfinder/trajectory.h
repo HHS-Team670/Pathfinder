@@ -18,6 +18,6 @@ CAPI void pf_trajectory_copy(Segment *src, Segment *dest, int length);
 CAPI TrajectoryInfo pf_trajectory_prepare(TrajectoryConfig c);
 CAPI int pf_trajectory_create(TrajectoryInfo info, TrajectoryConfig c, Segment *seg);
 CAPI int pf_trajectory_fromSecondOrderFilter(int filter_1_l, int filter_2_l, 
-        double dt, double u, double v, double impulse, int len, Segment *t);
+        double dt, double u, double v, double impulse, int len, Segment *t, TrajectoryConfig c);
 
 #endif
